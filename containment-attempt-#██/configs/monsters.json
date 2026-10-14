@@ -1,0 +1,100 @@
+{
+  "schema_version": 1,
+  "description": "behavior 关联程序实现；外观编号与怪物编号分离，新增相同行为的变体无需新增代码。",
+  "items": [
+    {
+      "id": "MON001",
+      "name": "游离体",
+      "enabled": true,
+      "behavior": "chaser",
+      "visual": "chaser",
+      "stats": {
+        "hp": 28,
+        "radius": 16,
+        "speed": 80,
+        "contact_damage": 13
+      },
+      "scaling": {
+        "hp_per_clear": 4,
+        "speed_per_clear": 4
+      },
+      "attack": {},
+      "drop_reward_id": "RWD_SCRAP_SMALL"
+    },
+    {
+      "id": "MON002",
+      "name": "喷射体",
+      "enabled": true,
+      "behavior": "shooter",
+      "visual": "shooter",
+      "stats": {
+        "hp": 28,
+        "radius": 16,
+        "speed": 54.4,
+        "contact_damage": 13
+      },
+      "scaling": {
+        "hp_per_clear": 4,
+        "speed_per_clear": 2.72
+      },
+      "attack": {
+        "approach_distance": 285,
+        "retreat_distance": 165,
+        "interval": 2.5,
+        "bullet_speed": 190,
+        "damage": 11
+      },
+      "drop_reward_id": "RWD_SCRAP_SMALL"
+    },
+    {
+      "id": "MON003",
+      "name": "聚合体",
+      "enabled": true,
+      "behavior": "chaser",
+      "visual": "tank",
+      "stats": {
+        "hp": 75.6,
+        "radius": 24,
+        "speed": 41.6,
+        "contact_damage": 13
+      },
+      "scaling": {
+        "hp_per_clear": 10.8,
+        "speed_per_clear": 2.08
+      },
+      "attack": {},
+      "drop_reward_id": "RWD_SCRAP_TANK"
+    },
+    {
+      "id": "MON_CORE",
+      "name": "异常核心",
+      "enabled": true,
+      "behavior": "boss_radial_charge",
+      "visual": "boss",
+      "stats": {
+        "hp": 760,
+        "radius": 43,
+        "speed": 50,
+        "contact_damage": 20
+      },
+      "scaling": {
+        "hp_per_clear": 55,
+        "speed_per_clear": 0
+      },
+      "attack": {
+        "initial_interval": 1.6,
+        "phase_threshold": 0.5,
+        "bullet_count": 10,
+        "enraged_bullet_count": 14,
+        "interval": 2.8,
+        "enraged_interval": 2,
+        "bullet_speed": 155,
+        "damage": 15,
+        "charge_warning": 0.85,
+        "charge_duration": 0.5,
+        "charge_speed": 430
+      },
+      "drop_reward_id": "RWD_SCRAP_CORE"
+    }
+  ]
+}

@@ -1,0 +1,126 @@
+{
+  "schema_version": 1,
+  "description": "奖励定义具体发什么；奖励池定义出现范围与权重。kind 支持 upgrade、scrap、heal、weapon、containment。",
+  "items": [
+    {
+      "id": "RWD_UPG001",
+      "name": "高压弹头",
+      "enabled": true,
+      "kind": "upgrade",
+      "upgrade_id": "UPG001"
+    },
+    {
+      "id": "RWD_UPG002",
+      "name": "快速循环",
+      "enabled": true,
+      "kind": "upgrade",
+      "upgrade_id": "UPG002"
+    },
+    {
+      "id": "RWD_UPG003",
+      "name": "分裂协议",
+      "enabled": true,
+      "kind": "upgrade",
+      "upgrade_id": "UPG003"
+    },
+    {
+      "id": "RWD_UPG004",
+      "name": "贯穿许可",
+      "enabled": true,
+      "kind": "upgrade",
+      "upgrade_id": "UPG004"
+    },
+    {
+      "id": "RWD_UPG005",
+      "name": "应急组织",
+      "enabled": true,
+      "kind": "upgrade",
+      "upgrade_id": "UPG005"
+    },
+    {
+      "id": "RWD_UPG006",
+      "name": "复合外壳",
+      "enabled": true,
+      "kind": "upgrade",
+      "upgrade_id": "UPG006"
+    },
+    {
+      "id": "RWD_UPG007",
+      "name": "轻量骨架",
+      "enabled": true,
+      "kind": "upgrade",
+      "upgrade_id": "UPG007"
+    },
+    {
+      "id": "RWD_UPG008",
+      "name": "磁场回收",
+      "enabled": true,
+      "kind": "upgrade",
+      "upgrade_id": "UPG008"
+    },
+    {
+      "id": "RWD_SCRAP_SMALL",
+      "name": "零件回收",
+      "enabled": true,
+      "kind": "scrap",
+      "amount": 2,
+      "price": 0
+    },
+    {
+      "id": "RWD_SCRAP_TANK",
+      "name": "重型零件",
+      "enabled": true,
+      "kind": "scrap",
+      "amount": 3,
+      "price": 0
+    },
+    {
+      "id": "RWD_SCRAP_CORE",
+      "name": "核心零件",
+      "enabled": true,
+      "kind": "scrap",
+      "amount": 30,
+      "price": 0
+    },
+    {
+      "id": "RWD_ROOM_CLEAR",
+      "name": "区域净化奖金",
+      "enabled": true,
+      "kind": "scrap",
+      "amount": 8,
+      "price": 0
+    },
+    {
+      "id": "RWD_MEDICAL",
+      "name": "应急医疗",
+      "enabled": true,
+      "kind": "heal",
+      "amount": 35,
+      "price": 12
+    },
+    {
+      "id": "RWD_WPN002",
+      "name": "扩散回收器",
+      "enabled": true,
+      "kind": "weapon",
+      "weapon_id": "WPN002",
+      "price": 45
+    },
+    {
+      "id": "RWD_WPN003",
+      "name": "脉冲发射器",
+      "enabled": true,
+      "kind": "weapon",
+      "weapon_id": "WPN003",
+      "price": 45
+    },
+    {
+      "id": "RWD_CNT002",
+      "name": "静磁芯",
+      "enabled": true,
+      "kind": "containment",
+      "containment_id": "CNT002",
+      "price": 38
+    }
+  ]
+}

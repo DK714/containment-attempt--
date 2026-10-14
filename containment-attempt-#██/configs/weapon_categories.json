@@ -1,0 +1,26 @@
+{
+  "schema_version": 1,
+  "description": "武器品类编号是角色 buff/debuff/禁用列表的引用来源。",
+  "items": [
+    {
+      "id": "WC001",
+      "name": "实弹",
+      "description": "单发、连发等动能弹丸武器"
+    },
+    {
+      "id": "WC002",
+      "name": "散射",
+      "description": "多弹丸、扇形弹道武器"
+    },
+    {
+      "id": "WC003",
+      "name": "能量",
+      "description": "能量武器品类；当前示例仍使用弹丸行为"
+    },
+    {
+      "id": "WC004",
+      "name": "生物",
+      "description": "生物武器品类预留"
+    }
+  ]
+}

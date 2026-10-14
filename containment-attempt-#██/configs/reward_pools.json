@@ -1,0 +1,120 @@
+{
+  "schema_version": 1,
+  "description": "同一次选择按权重无放回抽取；默认保持原版的八种强化。可以自行加入武器/收容物奖励编号。",
+  "items": [
+    {
+      "id": "POOL_COMBAT",
+      "name": "战斗强化池",
+      "entries": [
+        {
+          "reward_id": "RWD_UPG001",
+          "weight": 1
+        },
+        {
+          "reward_id": "RWD_UPG002",
+          "weight": 1
+        },
+        {
+          "reward_id": "RWD_UPG003",
+          "weight": 1
+        },
+        {
+          "reward_id": "RWD_UPG004",
+          "weight": 1
+        },
+        {
+          "reward_id": "RWD_UPG005",
+          "weight": 1
+        },
+        {
+          "reward_id": "RWD_UPG006",
+          "weight": 1
+        },
+        {
+          "reward_id": "RWD_UPG007",
+          "weight": 1
+        },
+        {
+          "reward_id": "RWD_UPG008",
+          "weight": 1
+        }
+      ]
+    },
+    {
+      "id": "POOL_TREASURE",
+      "name": "探索奖励池",
+      "entries": [
+        {
+          "reward_id": "RWD_UPG001",
+          "weight": 1
+        },
+        {
+          "reward_id": "RWD_UPG002",
+          "weight": 1
+        },
+        {
+          "reward_id": "RWD_UPG003",
+          "weight": 1
+        },
+        {
+          "reward_id": "RWD_UPG004",
+          "weight": 1
+        },
+        {
+          "reward_id": "RWD_UPG005",
+          "weight": 1
+        },
+        {
+          "reward_id": "RWD_UPG006",
+          "weight": 1
+        },
+        {
+          "reward_id": "RWD_UPG007",
+          "weight": 1
+        },
+        {
+          "reward_id": "RWD_UPG008",
+          "weight": 1
+        }
+      ]
+    },
+    {
+      "id": "POOL_SUPPLY",
+      "name": "补给物资池",
+      "entries": [
+        {
+          "reward_id": "RWD_UPG001",
+          "weight": 1
+        },
+        {
+          "reward_id": "RWD_UPG002",
+          "weight": 1
+        },
+        {
+          "reward_id": "RWD_UPG003",
+          "weight": 1
+        },
+        {
+          "reward_id": "RWD_UPG004",
+          "weight": 1
+        },
+        {
+          "reward_id": "RWD_UPG005",
+          "weight": 1
+        },
+        {
+          "reward_id": "RWD_UPG006",
+          "weight": 1
+        },
+        {
+          "reward_id": "RWD_UPG007",
+          "weight": 1
+        },
+        {
+          "reward_id": "RWD_UPG008",
+          "weight": 1
+        }
+      ]
+    }
+  ]
+}

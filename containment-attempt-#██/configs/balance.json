@@ -1,0 +1,20 @@
+{
+  "schema_version": 1,
+  "description": "与内容无关的全局战斗参数，单位为秒或像素。",
+  "default_character_id": "CHR001",
+  "default_floor_id": "FLOOR001",
+  "combat": {
+    "entry_invulnerability": 1,
+    "hit_invulnerability": 0.75,
+    "door_cooldown": 0.9,
+    "door_trigger_distance": 39,
+    "spawn_margin": 55,
+    "spawn_min_distance": 240,
+    "spawn_position_attempts": 24,
+    "enemy_initial_attack_min": 1,
+    "enemy_initial_attack_max": 2.5,
+    "hostile_bullet_lifetime": 7,
+    "pickup_radius": 25,
+    "pickup_speed": 340
+  }
+}

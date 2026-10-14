@@ -1,0 +1,18 @@
+{
+  "schema_version": 1,
+  "description": "新增配置表时在此注册；各表 id 独立且稳定，不使用数组下标作为引用。",
+  "settings": "balance.json",
+  "tables": {
+    "stats": "stats.json",
+    "weapon_categories": "weapon_categories.json",
+    "weapons": "weapons.json",
+    "characters": "characters.json",
+    "upgrades": "upgrades.json",
+    "rewards": "rewards.json",
+    "reward_pools": "reward_pools.json",
+    "monsters": "monsters.json",
+    "containments": "containments.json",
+    "rooms": "rooms.json",
+    "floors": "floors.json"
+  }
+}

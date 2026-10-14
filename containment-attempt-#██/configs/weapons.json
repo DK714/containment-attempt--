@@ -1,0 +1,74 @@
+{
+  "schema_version": 1,
+  "description": "当前实现 projectile_auto 行为。品类只决定分类和角色适配，不自动赋予新的攻击行为。",
+  "items": [
+    {
+      "id": "WPN001",
+      "name": "标准回收枪",
+      "enabled": true,
+      "category_id": "WC001",
+      "behavior": "projectile_auto",
+      "description": "自动瞄准最近的异常体。",
+      "effects": []
+    },
+    {
+      "id": "WPN002",
+      "name": "扩散回收器",
+      "enabled": true,
+      "category_id": "WC002",
+      "behavior": "projectile_auto",
+      "description": "散射三枚弹丸，单枚伤害较低。",
+      "effects": [
+        {
+          "stat": "projectiles",
+          "op": "add",
+          "value": 2
+        },
+        {
+          "stat": "damage",
+          "op": "multiply",
+          "value": 0.7
+        },
+        {
+          "stat": "fire_interval",
+          "op": "multiply",
+          "value": 1.25
+        }
+      ]
+    },
+    {
+      "id": "WPN003",
+      "name": "脉冲发射器",
+      "enabled": true,
+      "category_id": "WC003",
+      "behavior": "projectile_auto",
+      "description": "可穿透一个目标的能量弹丸。",
+      "effects": [
+        {
+          "stat": "pierce",
+          "op": "add",
+          "value": 1
+        },
+        {
+          "stat": "damage",
+          "op": "multiply",
+          "value": 1.2
+        },
+        {
+          "stat": "fire_interval",
+          "op": "multiply",
+          "value": 1.3
+        }
+      ]
+    },
+    {
+      "id": "WPN004",
+      "name": "活体培养器",
+      "enabled": false,
+      "category_id": "WC004",
+      "behavior": "projectile_auto",
+      "description": "未开放的武器样例。",
+      "effects": []
+    }
+  ]
+}

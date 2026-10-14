@@ -1,0 +1,42 @@
+{
+  "schema_version": 1,
+  "description": "hostile 是需击败的收容对象，artifact 是可领取的一次性被动物品；普通怪物和收容对象分别定义。",
+  "items": [
+    {
+      "id": "CNT001",
+      "name": "异常核心",
+      "enabled": true,
+      "kind": "hostile",
+      "code": "CA–001",
+      "risk_class": "失控",
+      "description": "设施中央的异常聚合核心。",
+      "monster_id": "MON_CORE",
+      "effects": [],
+      "heal_on_apply": 0
+    },
+    {
+      "id": "CNT002",
+      "name": "静磁芯",
+      "enabled": true,
+      "kind": "artifact",
+      "code": "CA–002",
+      "risk_class": "稳定",
+      "description": "回收范围 +60\n伤害减免 +8 个百分点",
+      "tag": "收容物",
+      "unique": true,
+      "effects": [
+        {
+          "stat": "magnet",
+          "op": "add",
+          "value": 60
+        },
+        {
+          "stat": "armor",
+          "op": "add",
+          "value": 0.08
+        }
+      ],
+      "heal_on_apply": 0
+    }
+  ]
+}

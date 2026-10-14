@@ -1,0 +1,139 @@
+{
+  "schema_version": 1,
+  "description": "强化可以包含多个属性效果；price 是默认补给价格，奖励记录可覆盖价格。",
+  "items": [
+    {
+      "id": "UPG001",
+      "name": "高压弹头",
+      "enabled": true,
+      "tag": "伤害",
+      "description": "弹丸伤害 +25%",
+      "effects": [
+        {
+          "stat": "damage",
+          "op": "multiply",
+          "value": 1.25
+        }
+      ],
+      "heal_on_apply": 0,
+      "price": 28
+    },
+    {
+      "id": "UPG002",
+      "name": "快速循环",
+      "enabled": true,
+      "tag": "射速",
+      "description": "攻击间隔缩短 15%",
+      "effects": [
+        {
+          "stat": "fire_interval",
+          "op": "multiply",
+          "value": 0.85
+        }
+      ],
+      "heal_on_apply": 0,
+      "price": 30
+    },
+    {
+      "id": "UPG003",
+      "name": "分裂协议",
+      "enabled": true,
+      "tag": "弹数",
+      "description": "每次攻击额外发射 1 枚弹丸\n最多 5 枚；形成扇形弹道",
+      "effects": [
+        {
+          "stat": "projectiles",
+          "op": "add",
+          "value": 1,
+          "cap": 5
+        }
+      ],
+      "heal_on_apply": 0,
+      "price": 40
+    },
+    {
+      "id": "UPG004",
+      "name": "贯穿许可",
+      "enabled": true,
+      "tag": "穿透",
+      "description": "弹丸可额外穿过 1 个敌人\n最多额外穿过 3 个敌人",
+      "effects": [
+        {
+          "stat": "pierce",
+          "op": "add",
+          "value": 1,
+          "cap": 3
+        }
+      ],
+      "heal_on_apply": 0,
+      "price": 32
+    },
+    {
+      "id": "UPG005",
+      "name": "应急组织",
+      "enabled": true,
+      "tag": "生命",
+      "description": "生命上限 +20\n同时恢复 20 点生命",
+      "effects": [
+        {
+          "stat": "max_hp",
+          "op": "add",
+          "value": 20
+        }
+      ],
+      "heal_on_apply": 20,
+      "price": 26
+    },
+    {
+      "id": "UPG006",
+      "name": "复合外壳",
+      "enabled": true,
+      "tag": "防御",
+      "description": "伤害减免 +8 个百分点\n最多减免 48%",
+      "effects": [
+        {
+          "stat": "armor",
+          "op": "add",
+          "value": 0.08,
+          "cap": 0.48
+        }
+      ],
+      "heal_on_apply": 0,
+      "price": 30
+    },
+    {
+      "id": "UPG007",
+      "name": "轻量骨架",
+      "enabled": true,
+      "tag": "移动",
+      "description": "移动速度 +12%\n上限 400",
+      "effects": [
+        {
+          "stat": "speed",
+          "op": "multiply",
+          "value": 1.12,
+          "cap": 400
+        }
+      ],
+      "heal_on_apply": 0,
+      "price": 24
+    },
+    {
+      "id": "UPG008",
+      "name": "磁场回收",
+      "enabled": true,
+      "tag": "回收",
+      "description": "零件吸取范围 +60\n上限 330",
+      "effects": [
+        {
+          "stat": "magnet",
+          "op": "add",
+          "value": 60,
+          "cap": 330
+        }
+      ],
+      "heal_on_apply": 0,
+      "price": 20
+    }
+  ]
+}

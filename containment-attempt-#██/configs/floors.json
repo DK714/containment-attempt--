@@ -1,0 +1,100 @@
+{
+  "schema_version": 1,
+  "description": "显式坐标定义一层连通设施；可增删房间或改变房型。",
+  "items": [
+    {
+      "id": "FLOOR001",
+      "name": "第九设施",
+      "start_position": [
+        0,
+        0
+      ],
+      "cells": [
+        {
+          "position": [
+            0,
+            0
+          ],
+          "room_id": "ROOM_ENTRY"
+        },
+        {
+          "position": [
+            1,
+            0
+          ],
+          "room_id": "ROOM_COMBAT"
+        },
+        {
+          "position": [
+            2,
+            0
+          ],
+          "room_id": "ROOM_COMBAT"
+        },
+        {
+          "position": [
+            3,
+            0
+          ],
+          "room_id": "ROOM_CORE"
+        },
+        {
+          "position": [
+            0,
+            1
+          ],
+          "room_id": "ROOM_SUPPLY"
+        },
+        {
+          "position": [
+            1,
+            1
+          ],
+          "room_id": "ROOM_COMBAT"
+        },
+        {
+          "position": [
+            2,
+            1
+          ],
+          "room_id": "ROOM_COMBAT"
+        },
+        {
+          "position": [
+            3,
+            1
+          ],
+          "room_id": "ROOM_COMBAT"
+        },
+        {
+          "position": [
+            0,
+            2
+          ],
+          "room_id": "ROOM_COMBAT"
+        },
+        {
+          "position": [
+            1,
+            2
+          ],
+          "room_id": "ROOM_COMBAT"
+        },
+        {
+          "position": [
+            2,
+            2
+          ],
+          "room_id": "ROOM_TREASURE"
+        },
+        {
+          "position": [
+            3,
+            2
+          ],
+          "room_id": "ROOM_COMBAT"
+        }
+      ]
+    }
+  ]
+}
