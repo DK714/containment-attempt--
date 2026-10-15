@@ -2,90 +2,90 @@
   "schema_version": 1,
   "description": "属性使用 stats.json 默认值，再覆盖 base_stats；后三类规则一律引用 WC 品类编号。",
   "items": [
-    {
-      "id": "CHR001",
-      "name": "回收员",
-      "code": "E–01",
-      "english_name": "RECLAIMER",
-      "enabled": true,
-      "description": "标准回收人员。清空房间，回收零件，继续收容。",
-      "base_stats": {
-        "max_hp": 100,
-        "damage": 12,
-        "fire_interval": 0.52,
-        "speed": 235,
-        "projectiles": 1,
-        "pierce": 0,
-        "armor": 0,
-        "magnet": 92,
-        "range": 690,
-        "bullet_speed": 610,
-        "spread_angle": 0.15,
-        "dash_speed": 690,
-        "dash_duration": 0.17,
-        "dash_cooldown": 1.4
-      },
-      "starting_weapon_id": "WPN001",
-      "buff_weapons": [
-        {
-          "category_id": "WC002",
-          "effects": [
-            {
-              "stat": "damage",
-              "op": "multiply",
-              "value": 1.15
-            }
-          ]
-        }
-      ],
-      "debuff_weapons": [
-        {
-          "category_id": "WC003",
-          "effects": [
-            {
-              "stat": "fire_interval",
-              "op": "multiply",
-              "value": 1.2
-            }
-          ]
-        }
-      ],
-      "forbidden_weapon_categories": [
+	{
+	  "id": "CHR001",
+	  "name": "回收员",
+	  "code": "E–01",
+	  "english_name": "RECLAIMER",
+	  "enabled": true,
+	  "description": "标准回收人员。清空房间，回收零件，继续收容。",
+	  "base_stats": {
+		"max_hp": 100,
+		"damage": 12,
+		"fire_interval": 0.52,
+		"speed": 235,
+		"projectiles": 1,
+		"pierce": 0,
+		"armor": 0,
+		"magnet": 92,
+		"range": 690,
+		"bullet_speed": 610,
+		"spread_angle": 0.15,
+		"dash_speed": 690,
+		"dash_duration": 0.17,
+		"dash_cooldown": 1.4
+	  },
+	  "starting_weapon_id": "WPN001",
+	  "buff_weapons": [
+		{
+		  "category_id": "WC002",
+		  "effects": [
+			{
+			  "stat": "damage",
+			  "op": "multiply",
+			  "value": 1.15
+			}
+		  ]
+		}
+	  ],
+	  "debuff_weapons": [
+		{
+		  "category_id": "WC003",
+		  "effects": [
+			{
+			  "stat": "fire_interval",
+			  "op": "multiply",
+			  "value": 1.2
+			}
+		  ]
+		}
+	  ],
+	  "forbidden_weapon_categories": [
         "WC004"
-      ]
-    },
-    {
-      "id": "CHR002",
-      "name": "重装员",
-      "code": "E–02",
-      "english_name": "WARDEN",
-      "enabled": false,
-      "description": "未开放。较高生命，较低速度。",
-      "base_stats": {
-        "max_hp": 140,
-        "speed": 190
-      },
-      "starting_weapon_id": "WPN001",
-      "buff_weapons": [],
-      "debuff_weapons": [],
-      "forbidden_weapon_categories": []
-    },
-    {
-      "id": "CHR003",
-      "name": "勘探员",
-      "code": "E–03",
-      "english_name": "SURVEYOR",
-      "enabled": false,
-      "description": "未开放。较高速度和回收范围，较低生命。",
-      "base_stats": {
-        "max_hp": 80,
-        "speed": 270,
-        "magnet": 140
-      },
-      "starting_weapon_id": "WPN001",
-      "buff_weapons": [],
-      "debuff_weapons": [],
-      "forbidden_weapon_categories": []
-    }
+	  ]
+	},
+	{
+	  "id": "CHR002",
+	  "name": "重装员",
+	  "code": "E–02",
+	  "english_name": "WARDEN",
+	  "enabled": false,
+	  "description": "未开放。较高生命，较低速度。",
+	  "base_stats": {
+		"max_hp": 140,
+		"speed": 190
+	  },
+	  "starting_weapon_id": "WPN001",
+	  "buff_weapons": [],
+	  "debuff_weapons": [],
+	  "forbidden_weapon_categories": []
+	},
+	{
+	  "id": "CHR003",
+	  "name": "勘探员",
+	  "code": "E–03",
+	  "english_name": "SURVEYOR",
+	  "enabled": false,
+	  "description": "未开放。较高速度和回收范围，较低生命。",
+	  "base_stats": {
+		"max_hp": 80,
+		"speed": 270,
+		"magnet": 140
+	  },
+	  "starting_weapon_id": "WPN001",
+	  "buff_weapons": [],
+	  "debuff_weapons": [],
+	  "forbidden_weapon_categories": []
+	}
   ]
 }

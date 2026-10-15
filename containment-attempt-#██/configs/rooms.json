@@ -2,76 +2,81 @@
   "schema_version": 1,
   "description": "房型控制战斗、锁门、奖励与补给。具体坐标写在 floors.json。",
   "items": [
-    {
-      "id": "ROOM_ENTRY",
-      "kind": "start",
-      "title": "入口 / 安全区域",
-      "map_symbol": "S",
-      "cleared_on_entry": true,
-      "lock_until_clear": false
-    },
-    {
-      "id": "ROOM_COMBAT",
-      "kind": "combat",
-      "title": "隔离室 / 清除异常体",
-      "map_symbol": "·",
-      "cleared_on_entry": false,
-      "lock_until_clear": true,
-      "waves": {
-        "count": 2,
-        "initial_delay": 0.7,
-        "between_delay": 1.5,
-        "base_count": 5,
-        "extra_per_wave": 1,
-        "extra_per_clear": 1,
-        "clear_bonus_cap": 5,
-        "monster_cycle": [
-          "MON001",
-          "MON001",
-          "MON001",
-          "MON002",
+	{
+	  "id": "ROOM_ENTRY",
+	  "name": "入口",
+	  "kind": "start",
+	  "title": "入口 / 安全区域",
+	  "map_symbol": "S",
+	  "cleared_on_entry": true,
+	  "lock_until_clear": false
+	},
+	{
+	  "id": "ROOM_COMBAT",
+	  "name": "隔离室",
+	  "kind": "combat",
+	  "title": "隔离室 / 清除异常体",
+	  "map_symbol": "·",
+	  "cleared_on_entry": false,
+	  "lock_until_clear": true,
+	  "waves": {
+		"count": 2,
+		"initial_delay": 0.7,
+		"between_delay": 1.5,
+		"base_count": 5,
+		"extra_per_wave": 1,
+		"extra_per_clear": 1,
+		"clear_bonus_cap": 5,
+		"monster_cycle": [
+		  "MON001",
+		  "MON001",
+		  "MON001",
+		  "MON002",
           "MON003"
-        ]
-      },
-      "clear_reward_id": "RWD_ROOM_CLEAR",
-      "choice_pool_id": "POOL_COMBAT",
-      "choice_count": 3
-    },
-    {
-      "id": "ROOM_SUPPLY",
-      "kind": "supply",
-      "title": "补给站 / 回收终端",
-      "map_symbol": "+",
-      "cleared_on_entry": true,
-      "lock_until_clear": false,
-      "shop": {
-        "pool_id": "POOL_SUPPLY",
-        "slots": 3,
-        "reroll_cost": 6,
-        "reroll_increment": 3,
-        "medical_reward_id": "RWD_MEDICAL",
-        "medical_uses": 1
-      }
-    },
-    {
-      "id": "ROOM_TREASURE",
-      "kind": "treasure",
-      "title": "封存仓 / 探索奖励",
-      "map_symbol": "?",
-      "cleared_on_entry": true,
-      "lock_until_clear": false,
-      "choice_pool_id": "POOL_TREASURE",
-      "choice_count": 3
-    },
-    {
-      "id": "ROOM_CORE",
-      "kind": "boss",
-      "title": "收容核心 / 最终区域",
-      "map_symbol": "!",
-      "cleared_on_entry": false,
-      "lock_until_clear": true,
-      "containment_id": "CNT001",
-      "required_combat_clears": 4
-    }
+		]
+	  },
+	  "clear_reward_id": "RWD_ROOM_CLEAR",
+	  "choice_pool_id": "POOL_COMBAT",
+	  "choice_count": 3
+	},
+	{
+	  "id": "ROOM_SUPPLY",
+	  "name": "补给站",
+	  "kind": "supply",
+	  "title": "补给站 / 回收终端",
+	  "map_symbol": "+",
+	  "cleared_on_entry": true,
+	  "lock_until_clear": false,
+	  "shop": {
+		"pool_id": "POOL_SUPPLY",
+		"slots": 3,
+		"reroll_cost": 6,
+		"reroll_increment": 3,
+		"medical_reward_id": "RWD_MEDICAL",
+		"medical_uses": 1
+	  }
+	},
+	{
+	  "id": "ROOM_TREASURE",
+	  "name": "封存仓",
+	  "kind": "treasure",
+	  "title": "封存仓 / 探索奖励",
+	  "map_symbol": "?",
+	  "cleared_on_entry": true,
+	  "lock_until_clear": false,
+	  "choice_pool_id": "POOL_TREASURE",
+	  "choice_count": 3
+	},
+	{
+	  "id": "ROOM_CORE",
+	  "name": "收容核心",
+	  "kind": "boss",
+	  "title": "收容核心 / 最终区域",
+	  "map_symbol": "!",
+	  "cleared_on_entry": false,
+	  "lock_until_clear": true,
+	  "containment_id": "CNT001",
+	  "required_combat_clears": 4
+	}
   ]
 }

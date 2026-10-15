@@ -41,7 +41,10 @@ func load_all() -> bool:
 			for record in document.items:
 				var fields = TABLE_FIELDS.get(table, {}).duplicate()
 				fields.merge({"id": "string", "name": "string"})
-				if not _object(record, file) or not _fields(record, fields, file):
+				if not _object(record, file):
+					continue
+				var context = "%s / %s" % [file, str(record.get("id", "未填写编号"))]
+				if not _fields(record, fields, context):
 					continue
 				if record.id.is_empty() or index.has(record.id):
 					errors.append("%s: 空编号或重复编号 %s" % [file, record.id])
@@ -87,7 +90,10 @@ func _type(value: Variant, expected: String) -> bool:
 func _fields(data: Dictionary, fields: Dictionary, context: String) -> bool:
 	var valid = true
 	for field in fields:
-		if not data.has(field) or not _type(data[field], fields[field]):
+		if not data.has(field):
+			errors.append("%s: 缺少必填字段 %s" % [context, field])
+			valid = false
+		elif not _type(data[field], fields[field]):
 			errors.append("%s: %s 必须为 %s" % [context, field, fields[field]])
 			valid = false
 	return valid
